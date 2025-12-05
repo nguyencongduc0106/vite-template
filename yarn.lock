@@ -277,14 +277,6 @@
     "@commitlint/types" "^20.0.0"
     conventional-changelog-conventionalcommits "^7.0.2"
 
-"@commitlint/config-validator@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-validator/-/config-validator-19.8.1.tgz#29e9bb1360fa41b9439b23d8e25deaaf097306b5"
-  integrity sha512-0jvJ4u+eqGPBIzzSdqKNX1rvdbSU1lPNYlfQQRIFnBgLy26BtC0cFnr7c/AyuzExMxWsMOte6MkTi9I3SQ3iGQ==
-  dependencies:
-    "@commitlint/types" "^19.8.1"
-    ajv "^8.11.0"
-
 "@commitlint/config-validator@^20.0.0":
   version "20.0.0"
   resolved "https://registry.yarnpkg.com/@commitlint/config-validator/-/config-validator-20.0.0.tgz#d97d83be722a04be2038e54bdd3ec7d11efec557"
@@ -292,30 +284,6 @@
   dependencies:
     "@commitlint/types" "^20.0.0"
     ajv "^8.11.0"
-
-"@commitlint/cz-commitlint@^19.2.0":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-19.8.1.tgz#131968c6267ade0647cac37bf5379bbd20b2f97b"
-  integrity sha512-GndsziRLYQbmDSukwgQSp8G/cTlhJNn2U8nKZaNG9NiBxv17uMTI69u7c9RJTcAQCjVNOWWB4+CT/aPFxcbzSQ==
-  dependencies:
-    "@commitlint/ensure" "^19.8.1"
-    "@commitlint/load" "^19.8.1"
-    "@commitlint/types" "^19.8.1"
-    chalk "^5.3.0"
-    lodash.isplainobject "^4.0.6"
-    word-wrap "^1.2.5"
-
-"@commitlint/ensure@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-19.8.1.tgz#938c54d6f586bda600b5c8e8e842edb281546e14"
-  integrity sha512-mXDnlJdvDzSObafjYrOSvZBwkD01cqB4gbnnFuVyNpGUM5ijwU/r/6uqUmBXAAOKRfyEjpkGVZxaDsCVnHAgyw==
-  dependencies:
-    "@commitlint/types" "^19.8.1"
-    lodash.camelcase "^4.3.0"
-    lodash.kebabcase "^4.1.1"
-    lodash.snakecase "^4.1.1"
-    lodash.startcase "^4.4.0"
-    lodash.upperfirst "^4.3.1"
 
 "@commitlint/ensure@^20.0.0":
   version "20.0.0"
@@ -328,11 +296,6 @@
     lodash.snakecase "^4.1.1"
     lodash.startcase "^4.4.0"
     lodash.upperfirst "^4.3.1"
-
-"@commitlint/execute-rule@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-19.8.1.tgz#53000363b737773e2d25e97c20f15eaa78742067"
-  integrity sha512-YfJyIqIKWI64Mgvn/sE7FXvVMQER/Cd+s3hZke6cI1xgNT/f6ZAz5heND0QtffH+KbcqAwXDEE1/5niYayYaQA==
 
 "@commitlint/execute-rule@^20.0.0":
   version "20.0.0"
@@ -364,22 +327,6 @@
     "@commitlint/parse" "^20.0.0"
     "@commitlint/rules" "^20.0.0"
     "@commitlint/types" "^20.0.0"
-
-"@commitlint/load@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-19.8.1.tgz#b997b1f65a961bf0a47189f15f6dc8786ceb4576"
-  integrity sha512-9V99EKG3u7z+FEoe4ikgq7YGRCSukAcvmKQuTtUyiYPnOd9a2/H9Ak1J9nJA1HChRQp9OA/sIKPugGS+FK/k1A==
-  dependencies:
-    "@commitlint/config-validator" "^19.8.1"
-    "@commitlint/execute-rule" "^19.8.1"
-    "@commitlint/resolve-extends" "^19.8.1"
-    "@commitlint/types" "^19.8.1"
-    chalk "^5.3.0"
-    cosmiconfig "^9.0.0"
-    cosmiconfig-typescript-loader "^6.1.0"
-    lodash.isplainobject "^4.0.6"
-    lodash.merge "^4.6.2"
-    lodash.uniq "^4.5.0"
 
 "@commitlint/load@^20.1.0":
   version "20.1.0"
@@ -422,18 +369,6 @@
     minimist "^1.2.8"
     tinyexec "^1.0.0"
 
-"@commitlint/resolve-extends@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-19.8.1.tgz#a44bb4c22e3e7d407cc9a3758fcf58f5c360b694"
-  integrity sha512-GM0mAhFk49I+T/5UCYns5ayGStkTt4XFFrjjf0L4S26xoMTSkdCf9ZRO8en1kuopC4isDFuEm7ZOm/WRVeElVg==
-  dependencies:
-    "@commitlint/config-validator" "^19.8.1"
-    "@commitlint/types" "^19.8.1"
-    global-directory "^4.0.1"
-    import-meta-resolve "^4.0.0"
-    lodash.mergewith "^4.6.2"
-    resolve-from "^5.0.0"
-
 "@commitlint/resolve-extends@^20.1.0":
   version "20.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-20.1.0.tgz#bfccbd7772ffa49f99f3e0f828cf8612667b2e8e"
@@ -467,14 +402,6 @@
   integrity sha512-drXaPSP2EcopukrUXvUXmsQMu3Ey/FuJDc/5oiW4heoCfoE5BdLQyuc7veGeE3aoQaTVqZnh4D5WTWe2vefYKg==
   dependencies:
     find-up "^7.0.0"
-
-"@commitlint/types@^19.8.1":
-  version "19.8.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-19.8.1.tgz#7971fbd56b0cfb31692a4e1941b74ac8217c44e5"
-  integrity sha512-/yCrWGCoA1SVKOks25EGadP9Pnj0oAIHGpl2wH2M2Y46dPM2ueb8wyCVOD7O3WCTkaJ0IkKvzhl1JY7+uCT2Dw==
-  dependencies:
-    "@types/conventional-commits-parser" "^5.0.0"
-    chalk "^5.3.0"
 
 "@commitlint/types@^20.0.0":
   version "20.0.0"
