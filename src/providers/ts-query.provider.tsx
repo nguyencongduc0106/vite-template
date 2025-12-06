@@ -3,10 +3,10 @@ import { keepPreviousData, QueryClient, QueryClientProvider } from "@tanstack/re
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
+      placeholderData: keepPreviousData,
       refetchOnWindowFocus: false,
       retry: 0,
       staleTime: Infinity,
-      placeholderData: keepPreviousData,
     },
   },
 })

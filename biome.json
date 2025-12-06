@@ -1,36 +1,56 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "assist": {
+    "actions": {
+      "recommended": true,
+      "source": {
+        "organizeImports": "on",
+        "useSortedKeys": "off",
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
+      }
+    },
+    "enabled": true
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 100
+    },
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "files": {
     "includes": ["src/**/*", "!src/routeTree.gen.ts"]
   },
-  "linter": {
-    "enabled": true,
-    "rules": { "recommended": true }
-  },
   "formatter": {
     "enabled": true,
+    "attributePosition": "multiline",
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 100,
-    "attributePosition": "multiline"
+    "lineWidth": 100
   },
   "javascript": {
     "formatter": {
       "enabled": true,
-      "quoteStyle": "double",
-      "jsxQuoteStyle": "double",
-      "trailingCommas": "all",
-      "semicolons": "asNeeded",
+      "attributePosition": "multiline",
       "indentStyle": "space",
       "indentWidth": 2,
+      "jsxQuoteStyle": "double",
       "lineEnding": "lf",
       "lineWidth": 100,
-      "attributePosition": "multiline",
-      "operatorLinebreak": "after"
+      "operatorLinebreak": "after",
+      "quoteStyle": "double",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all"
     },
-    "linter": { "enabled": false },
-    "globals": []
+    "globals": [],
+    "linter": { "enabled": false }
   },
   "json": {
     "formatter": {
@@ -41,17 +61,22 @@
       "lineWidth": 100
     }
   },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    },
-    "formatter": {
-      "enabled": true,
-      "indentStyle": "space",
-      "indentWidth": 2,
-      "lineEnding": "lf",
-      "lineWidth": 100
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useAltText": "error"
+      },
+      "complexity": "error",
+      "correctness": {
+        "noUnusedVariables": "info",
+        "noInvalidUseBeforeDeclaration": "error"
+      },
+      "performance": "error",
+      "security": "error",
+      "style": "error",
+      "suspicious": "error"
     }
-  },
-  "assist": { "enabled": true }
+  }
 }
