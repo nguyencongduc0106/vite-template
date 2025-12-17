@@ -50,7 +50,7 @@
       "trailingCommas": "all"
     },
     "globals": [],
-    "linter": { "enabled": false }
+    "linter": { "enabled": true }
   },
   "json": {
     "formatter": {
@@ -65,18 +65,24 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "nursery": {},
       "a11y": {
         "useAltText": "error"
       },
-      "complexity": "error",
+      "complexity": {},
       "correctness": {
         "noUnusedVariables": "info",
         "noInvalidUseBeforeDeclaration": "error"
       },
-      "performance": "error",
-      "security": "error",
-      "style": "error",
-      "suspicious": "error"
+      "performance": {},
+      "security": {},
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noImplicitAnyLet": "warn"
+      }
     }
   }
 }
